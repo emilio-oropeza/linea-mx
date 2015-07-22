@@ -1,0 +1,184 @@
+#galerias{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 10;
+	display: none;
+}
+
+#indepth_cover{
+	width: 100%;
+	height: 840px;
+	background-image: url("../images/genral/IMG_Portada.jpg");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.indepth_transicion{
+	width: 100%;
+	height: 266px;
+	background-image: url("../images/genral/IMG_Transicion1.jpg");
+	background-size: cover;
+	background-position: center;
+}
+#indepth_estacion{
+	width: 100%;
+	height: 830px;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+#selector{
+	background-color: #FFF;
+	width: 770px;
+	height: 75px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 74px;
+	margin: auto;
+}
+#estacion_equipos{
+	width: 640px;
+	height: 56px;
+	display: block;
+	margin: auto;
+	margin-top: 8px;
+	position: relative;
+	overflow: hidden;
+}
+#line_background{
+	width: 100%;
+	height: 0px;
+	position: absolute;
+    border-top: 1px solid #E2E3E5;   
+    border-bottom: 1px solid #E2E3E5;
+    margin: auto;
+    bottom: 0;
+    top: 0;    
+}
+#contenerdor_equipos {
+    height: 56px;
+    width: 1314px;
+    position: relative;
+    z-index: 5;
+}
+.equipos{
+	width: 57px;
+	height: 56px;
+	display: inline-block;
+	float: left;
+	margin-right: 16px;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+#btns_cambios{
+	height: 36px;
+	width: 30px;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 158px;
+}
+#etiquetas{
+	height: 36px;
+	width: 30px;
+	background-image: url("../images/btns/BTN_Etiqueta.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+@media(max-width: 1000px){
+	#indepth_cover {
+	    height: 660px;
+	}
+	.indepth_transicion {
+	    height: 200px;
+	}
+	#indepth_estacion {
+	    height: 615px;
+	}
+	#btns_cambios {
+	    bottom: 110px;
+	}
+	#selector {
+	    bottom: 25px;
+	}
+	#selector {
+	    bottom: 25px;
+	    width: 720px;
+	}
+}
+@media(max-width: 720px){
+	#indepth_cover {
+	    height: 540px;
+	}
+	.indepth_transicion {
+	    height: 100px;
+	}
+	#indepth_estacion {
+	    height: 540px;
+	}
+	#btns_cambios {
+	    bottom: 75px;
+	    height: 50px;
+	    width: 40px;
+	}
+	#etiquetas {
+	    width: 100%;
+	    height: 100%;
+	}
+	#selector {
+	    width: 515px;
+	    height: 66px;
+	    background-color: rgba(255, 255, 255, 0.5);
+	    bottom: 0px;
+	}
+	#estacion_equipos {
+	    width: 494px;
+	    left: 0px;
+	    margin-top: 5px;
+	}
+	#contenerdor_equipos {
+	    left: -75px;
+	}
+
+}
+@media(max-width: 640px){
+	#indepth_cover {
+	    height: 440px;
+	}
+	
+	#indepth_estacion {
+	    height: 400px;
+	}
+	#btns_cambios {
+	    display: none;
+	}
+	#selector {
+	    width: 360px;
+	}
+	#estacion_equipos {
+	    width: 349px;
+	}
+	#contenerdor_equipos {
+	    left: -146px;
+	}
+}
+@media(max-width: 380px){
+	#selector {
+	    width: 215px;
+	}
+	#estacion_equipos {
+	    width: 202px;
+	}
+	#contenerdor_equipos {
+	    left: -219px;
+	}
+}
