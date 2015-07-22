@@ -1,15 +1,15 @@
 (function($){
-	$.fn.galeria = function(){
+	$.fn.sel = function(){
 		return this.each(function() {
 			var element = $(this);						
-			if (element.data('galeria')) return;
-			var myplugin = new galeria(this);
-			element.data('galeria', myplugin);
-			element.data('galeria').methods.init();
+			if (element.data('sel')) return;
+			var myplugin = new sel(this);
+			element.data('sel', myplugin);
+			element.data('sel').methods.init();
 		});
 	};
 	
-	var galeria = function(target){
+	var sel = function(target){
 		var componentObj = {
 			etiquetas:false,
 			equipos:["Ame","Atlas","Chiapas","CruzAzul",
@@ -96,5 +96,5 @@
 	};	
 })(jQuery);
 $(document).ready(function(){
-	$("#selector").galeria();
+	$("#selector").sel();
 });
