@@ -2,7 +2,7 @@
 	position: fixed;
 	right: 15px;
 	bottom: 20px;
-	z-index: 2000;
+	z-index: 10;
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
 	display: -moz-inline-box;
@@ -14,7 +14,7 @@
 	display: none;
 	right: 3px;
 	top: 8px;
-	z-index: 2000;
+	z-index: 10;
 }
 #preload{
 	display: none;

@@ -16,7 +16,7 @@
 			methods:{
 				init:function(){
 					$("#boton_mapa").click(function(){
-
+						
 					});
 				},
 				next:function(){
