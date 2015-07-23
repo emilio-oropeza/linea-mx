@@ -4,7 +4,15 @@
 	position: fixed;
 	background-color: rgba(0, 0, 0, 0.6);
 	z-index: 10;
-	display: none;
+	/*display: none;*/
+}
+#mapa_container {
+    width: 100vw;
+    height: 90vh;
+    background-image: url("../images/genral/IMG Mapa.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: auto 100%;
 }
 #indepth_cover{
 	width: 100%;
@@ -237,6 +245,21 @@
 	}
 }
 @media(max-width: 420px){
+	#indepth_cover {
+	    height: 340px;
+	}
+	#boton_container {
+	    width: 370px;
+	}
+	#boton_mapa {
+	    left: 3px;
+	}
+	#boton_galeria {
+	    right: 8px;
+	}
+	#indepth_estacion {
+	    height: 315px;
+	}
 	#boton_container {
 	    display: none;
 	}

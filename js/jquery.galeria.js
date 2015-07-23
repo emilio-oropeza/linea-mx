@@ -15,7 +15,9 @@
 			index: 0,
 			methods:{
 				init:function(){
-					$("#boton_mapa")
+					$("#boton_mapa").click(function(){
+
+					});
 				},
 				next:function(){
 					
@@ -27,7 +29,7 @@
 					
 				},
 				display_mapa:function(){
-					
+
 				}
 			}
 		};
