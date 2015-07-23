@@ -1,6 +1,6 @@
 #galerias{
 	width: 100vw;
-	height: 100vh;
+	height: 110vh;
 	position: fixed;
 	background-color: rgba(0, 0, 0, 0.6);
 	z-index: 15;
@@ -24,14 +24,14 @@
     z-index: 20;
 }
 #mapa_container {
-    width: 95vw;
-    height: 95vh;
+    width: 90vw;
+	height: 90vh;
     position: absolute;
 	margin: auto;
 	left: 0px;
 	right: 0px;
 	top: 0px;
-	bottom: 0px;
+	bottom: 10vh;
     background-image: url("../images/genral/IMG Mapa.jpg");
     background-repeat: no-repeat;
     background-position: center; 
