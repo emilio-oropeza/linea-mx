@@ -16,7 +16,15 @@
 			methods:{
 				init:function(){
 					$("#boton_mapa").click(function(){
-						
+						componentObj.methods.display_mapa();
+					});
+					$("#boton_galeria").click(function(){
+						componentObj.methods.display_galeria();
+					});
+					$("#close").click(function(){
+						$(target).hide();
+						$(target).find("#mapa_container").hide();
+						$(target).find("#gallery_container").hide();
 					});
 				},
 				next:function(){
@@ -26,10 +34,12 @@
 					
 				},
 				display_galeria: function(){
-					
+					$(target).show();
+					$(target).find("#gallery_container").show();
 				},
 				display_mapa:function(){
-
+					$(target).show();
+					$(target).find("#mapa_container").show();
 				}
 			}
 		};
