@@ -21,7 +21,7 @@
 					$("#boton_galeria").click(function(){
 						componentObj.methods.display_galeria();
 					});
-					$("#close").click(function(){
+					$(".close").click(function(){
 						$(target).hide();
 						$(target).find("#mapa_container").hide();
 						$(target).find("#gallery_container").hide();
@@ -92,4 +92,7 @@
 })(jQuery);
 $(document).ready(function(){
 	$("#galerias").galeria();
+	setTimeout(function() {
+        $("#info").hide();
+    }, 5000);
 });

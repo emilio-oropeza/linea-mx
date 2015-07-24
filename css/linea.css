@@ -1,6 +1,52 @@
 #indepth_content {
     position: relative;
 }
+#info{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 15;
+}
+#info_cont{
+	width: 1000px;
+	height: 100%;
+	position: relative;
+}
+#info_cont div{
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+#info_mapa{
+	width: 170px;
+	height: 118px;
+	left: 120px;
+	top: 210px;
+	background-image: url("../images/info/INFO 4.png");
+}
+#info_gal{
+	width: 128px;
+	height: 124px;
+	right: 100px;
+	top: 200px;
+	background-image: url("../images/info/INFO 3.png");
+}
+#info_down{
+	width: 260px;
+	height: 136px;
+	right: 91px;
+	top: 507px;
+	background-image: url("../images/info/INFO 2.png");
+}
+#info_estac{
+	width: 211px;
+	height: 82px;
+	left: 315px;
+	bottom: 155px;
+	background-image: url("../images/info/INFO 1.png");
+}
 #galerias{
 	width: 100vw;
 	height: 100%;
@@ -9,7 +55,7 @@
 	z-index: 15;
 	display: none;
 }
-#close {
+.close {
 	width: 50px;
     height: 50px;
     color: #66BD4A;
@@ -19,12 +65,13 @@
     text-align: center;
     line-height: 50px;
     position: absolute;
-    right: 0px;    
+    top:-25px;
+    right: -25px;    
     border: 4px solid;    
     border-radius: 30px;
     background-color: #fff;
     cursor: pointer;
-    z-index: 20;
+    z-index: 50;
 }
 #mapa_container {
     width: 90vw;
@@ -282,6 +329,26 @@
 	    bottom: 25px;
 	    width: 720px;
 	}
+	#info_cont {
+	    width: 720px;
+	    margin: auto;
+	}
+	#info_mapa {
+	    left: 80px;
+	    top: 125px;
+	}
+	#info_gal {
+		right: 78px;
+		top: 135px;
+	}
+	#info_down {
+	    right: 5px;
+	    top: 383px;
+	}
+	#info_estac {
+	    left: 164px;
+	    bottom: 108px;
+	}
 }
 @media(max-width: 720px){
 	#indepth_cover {
@@ -331,6 +398,25 @@
 	#contenerdor_equipos {
 	    left: -75px;
 	}
+	#info_cont {
+	    width: 640px;
+	}
+	#info_mapa {
+	    left: 80px;
+	    top: 125px;
+	}
+	#info_gal {
+		right: 78px;
+		top: 135px;
+	}
+	#info_down {
+	    right: 5px;
+	    top: 383px;
+	}
+	#info_estac {
+	    left: 164px;
+	    bottom: 108px;
+	}
 }
 @media(max-width: 640px){
 	#indepth_cover {
@@ -355,7 +441,9 @@
 	    height: 400px;
 	}
 	#btns_cambios {
-	    display: none;
+	    width: 20px;
+		height: 26px;
+		bottom: 68px;
 	}
 	#selector {
 	   	width: 421px;
@@ -368,6 +456,33 @@
 	}
 	#contenerdor_equipos {
 	    left: -146px;
+	}
+	#info_cont {
+	    width: 420px;
+	}
+	#info_mapa {
+	    left: 50px;
+	    top: 81px;
+	    width: 85px;
+	    height: 59px;
+	}
+	#info_gal {
+	    right: 48px;
+	    top: 90px;
+	    width: 64px;
+	    height: 62px;
+	}
+	#info_down {
+	    right: 15px;
+	    top: 226px;
+	    width: 130px;
+	    height: 68px;
+	}
+	#info_estac {
+	    left: 112px;
+	    bottom: 75px;
+	    width: 105px;
+	    height: 41px;
 	}
 }
 @media(max-width: 500px){
@@ -406,6 +521,25 @@
 	}
 	#mapa_container{
 		background-size: 100% auto;
+	}
+	#info_cont {
+	    width: 320px;
+	}
+	#info_mapa {
+	    left: 25px;
+	    top: 82px;
+	}
+	#info_gal {
+	    right: 13px;
+	    top: 75px;
+	}
+	#info_down {
+	    right: 0px;
+	    top: 190px;
+	}
+	#info_estac {
+	    left: 62px;
+	    bottom: 78px;
 	}
 }
 @media(max-width: 370px){
