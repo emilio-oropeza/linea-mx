@@ -40,6 +40,9 @@
 					$("#right").click(function(){
 						componentObj.methods.next();
 					});
+					$(window).resize(function(){
+						componentObj.methods.display_poster();
+					});
 				},
 				next:function(){
 					if(componentObj.index < 4){
@@ -70,7 +73,7 @@
 						$("#left").prop( "disabled", false );;
 						$("#right").prop( "disabled", false );;
 					}
-					var left = -1*(componentObj.index*($("#indicator div").width()));
+					var left = -1*(componentObj.index*($("#images div").width()));
 					$("#images").animate({"left":left}, "slow");
 					$("#indicator div").each(function(i){	
 						if(i == componentObj.index){
