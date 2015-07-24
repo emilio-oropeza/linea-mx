@@ -1,6 +1,9 @@
+#indepth_content {
+    position: relative;
+}
 #galerias{
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 	position: fixed;
 	background-color: rgba(0, 0, 0, 0.6);
 	z-index: 15;
@@ -25,8 +28,8 @@
 }
 #mapa_container {
     width: 90vw;
-	height: 90vh;
-    position: absolute;
+	height: 80%;
+	position: absolute;
 	margin: auto;
 	left: 0px;
 	right: 0px;
@@ -400,6 +403,9 @@
 	}
 	#contenerdor_equipos {
 	    left: -219px;
+	}
+	#mapa_container{
+		background-size: 100% auto;
 	}
 }
 @media(max-width: 370px){
