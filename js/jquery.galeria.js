@@ -70,7 +70,7 @@
 						$("#left").prop( "disabled", false );;
 						$("#right").prop( "disabled", false );;
 					}
-					var left = -1*(componentObj.index*500);
+					var left = -1*(componentObj.index*($("#indicator div").width()));
 					$("#images").animate({"left":left}, "slow");
 					$("#indicator div").each(function(i){	
 						if(i == componentObj.index){
