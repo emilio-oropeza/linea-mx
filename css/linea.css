@@ -40,7 +40,7 @@
 }
 #gallery_container {
 	height: 600px;
-	width: 400px;
+	width: 500px;
     position: absolute;
     left: 0px;
     right: 0px;
@@ -52,24 +52,50 @@
 }
 #cont{
 	height: 600px;
-	width: 400px;
+	width: 500px;
     position: relative;
+    overflow: hidden;
+}
+.gal_arrows {
+	width: 50px;
+    height: 100%;
+    position: absolute;
+    z-index: 30;
+    background-color: #fff;
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+	cursor: pointer;
+}
+.gal_arrows:hover {
+	background-color: rgba(0,0,0,0.5);
 }
 #left {
-    height: 100%;
-    position: absolute;
-    width: 100px;
     left: 0px;
-    background-image: url("../images/genral/forward_arrow2.svg");
-    z-index: 30;
+    background-image: url("../images/genral/back_arrow.svg");
 }
 #right {
-    height: 100%;
-    position: absolute;
-    width: 100px;
     right: 0px;
     background-image: url("../images/genral/forward_arrow.svg");
-    z-index: 30;
+}
+#indicator {
+    width: 77px;
+    height: 16px;
+    z-index: 2;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+#indicator div {
+    width: 10px;
+    height: 10px;
+    border-radius: 25px;
+    background-color: #FFF;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid rgb(102, 189, 76);
 }
 #images{
 	position: relative;
@@ -80,9 +106,18 @@
 #images div{
 	position: relative;
 	height: 600px;
-	width: 400px;
+	width: 500px;
 	float: left;
 	display: inline-block;
+	background-color: #fff;
+}
+#images img{
+	width: auto;
+	height: 100%;
+	margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 #indepth_cover{
 	width: 100%;
@@ -99,21 +134,20 @@
     position: relative;
 }
 #boton_mapa {
-    height: 139px;
-    width: 89px;
+    height: 217px;
+    width: 122px;
     position: absolute;
-    top: 36px;
-    left: 48px;
+    top: 6px;
+    left: 43px;
     cursor: pointer;
 }
 #boton_galeria {
-    height: 139px;
-    width: 87px;
+    height: 221px;
+	width: 114px;
     position: absolute;
     top: 36px;
     right: 63px;
     cursor: pointer;
-    display: none;
 }
 .indepth_transicion{
 	width: 100%;
@@ -140,11 +174,27 @@
 	bottom: 74px;
 	margin: auto;
 }
+.select_arrows {
+	width: 40px;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center;
+	cursor: pointer;
+}
+#prev {
+	background-image: url("../images/genral/back_arrow_gray.svg");
+}
+#next{
+	background-image: url("../images/genral/forward_arrow_gray.svg");
+}
 #estacion_equipos{
 	width: 640px;
 	height: 56px;
-	display: block;
-	margin: auto;
+	display: inline-block;
+	float: left;
 	margin-top: 8px;
 	position: relative;
 	overflow: hidden;
@@ -202,15 +252,15 @@
 	    width: 720px;
 	}
 	#boton_mapa {
-		height: 106px;
-	    width: 67px;
-	    left: 6px;
-	    top: 29px;	    
+	    height: 173px;
+	    width: 94px;
+	    left: 2px;
+	    top: 5px;
 	}
 	#boton_galeria {
-	    height: 108px;
-	    width: 68px;
-	    top: 28px;
+	    height: 170px;
+		width: 89px;
+	    top: 4px;
 	    right: 17px;
 	}
 	.indepth_transicion {
@@ -239,15 +289,15 @@
 	}
 	#boton_mapa {
 	    left: 27px;
-	    top: 22px;
-	    height: 90px;
-	    width: 58px;
+	    top: 4px;
+	    height: 140px;
+	    width: 77px;
 	}
 	#boton_galeria {
-	    height: 88px;
-	    width: 57px;
-	    top: 24px;
-	    right: 39px;
+    	height: 140px;
+    	width: 73px;
+    	top: 4px;
+    	right: 39px;
 	}
 	.indepth_transicion {
 	    height: 100px;
@@ -265,7 +315,7 @@
 	    height: 100%;
 	}
 	#selector {
-	    width: 515px;
+	    width: 574px;
 	    height: 66px;
 	    background-color: rgba(255, 255, 255, 0.5);
 	    bottom: 0px;
@@ -278,7 +328,6 @@
 	#contenerdor_equipos {
 	    left: -75px;
 	}
-
 }
 @media(max-width: 640px){
 	#indepth_cover {
@@ -288,15 +337,15 @@
 	    width: 420px;
 	}
 	#boton_mapa {
-	    left: 6px;
-	    top: 16px;
-	    height: 63px;
-	    width: 39px;
+	    left: 2px;
+	    top: 2px;
+	    height: 99px;
+	    width: 55px;
 	}
 	#boton_galeria {
-	    height: 61px;
-	    width: 39px;
-	    top: 17px;
+	    height: 97px;
+	    width: 50px;
+	    top: 3px;
 	    right: 13px;
 	}
 	#indepth_estacion {
@@ -306,13 +355,25 @@
 	    display: none;
 	}
 	#selector {
-	    width: 360px;
+	   	width: 421px;
+	}
+	.select_arrows {
+	    width: 36px;
 	}
 	#estacion_equipos {
 	    width: 349px;
 	}
 	#contenerdor_equipos {
 	    left: -146px;
+	}
+}
+@media(max-width: 500px){
+	#gallery_container, #cont, #images div {
+	    width: 300px;
+	    height: 460px;
+	}
+	.gal_arrows {
+		display: none;
 	}
 }
 @media(max-width: 420px){
@@ -332,12 +393,17 @@
 	    height: 315px;
 	}
 	#selector {
-	    width: 215px;
+	    width: 282px;
 	}
 	#estacion_equipos {
 	    width: 202px;
 	}
 	#contenerdor_equipos {
 	    left: -219px;
+	}
+}
+@media(max-width: 370px){
+	#boton_container{
+		width: 100%;
 	}
 }

@@ -29,6 +29,7 @@
 	<body>
 		<link type="text/css" rel="stylesheet" href="css/linea.css?v=1.0"/>
 		<link type="text/css" rel="stylesheet" href="css/indepth.css?v=1.0"/>
+		<script type="text/javascript" src="js/jquery.touchSwipe.min.js?v=1.0"></script>
 		<script type="text/javascript" src="js/jquery.selector.js?v=1.0"></script>
 		<script type="text/javascript" src="js/jquery.galeria.js?v=1.0"></script>
 		<script type="text/javascript" src="js/indepth.js?v=1.0"></script>
@@ -118,20 +119,23 @@
 					
 				</div>
 				<div id="gallery_container">
+					<div id="left" class="gal_arrows"></div>
+					<div id="right" class="gal_arrows"></div>
+					<div id="indicator">
+						<div id="indi0" style="background-color: #66BD4C;"></div>
+						<div id="indi1"></div>
+						<div id="indi2"></div>
+						<div id="indi3"></div>
+						<div id="indi4"></div>
+					</div>
 					<div id="cont">
-						<div id="left"></div>
-						<div id="right"></div>
+						
 						<div id="images">
-							<div style="background-color: red;"></div>
-							<div></div>
-							<div style="background-color: red;"></div>
-							<div></div>
-							<div style="background-color: red;"></div>
-							<div></div>
-							<div style="background-color: red;"></div>
-							<div></div>
-							<div style="background-color: red;"></div>
-							<div></div>
+							<div><img src="images/galeria/0.jpg"></div>
+							<div><img src="images/galeria/1.jpg"></div>
+							<div><img src="images/galeria/2.jpg"></div>
+							<div><img src="images/galeria/3.jpg"></div>
+							<div><img src="images/galeria/4.jpg"></div>
 						</div>
 					</div>
 				</div>
@@ -139,7 +143,7 @@
 			<div id="indepth_cover" class="indepth_element">
 				<div id="boton_container">
 					<div id="boton_mapa"></div>
-					<!--<div id="boton_galeria"></div>-->
+					<div id="boton_galeria"></div>
 				</div>
 			</div>
 			<div class="indepth_transicion"></div>
@@ -148,6 +152,7 @@
 					<div id="etiquetas"></div>
 				</div>
 				<div id="selector">
+					<div id="prev" class="select_arrows"></div>
 					<div id="estacion_equipos">
 						<div id="line_background"></div>
 						<div id="contenerdor_equipos">
@@ -162,6 +167,7 @@
 							<div id="equipo8" class="equipos"></div>
 						</div>
 					</div>
+					<div id="next" class="select_arrows"></div>
 				</div>
 			</div>
 		</div>
@@ -176,10 +182,5 @@
 			<a href="whatsapp://send?text=Lanzamiento Voit Dynamo 2015 http%3A%2F%2Fjuanfutbol.com%2Findepth%2Flanzamiento-voit-dynamo-2015"  target="_blank"><div class="indepth_share_item whatsapp"></div></a>
 		</div>
 		<div id="indepth_footer"></div>
-		<script type="text/javascript">
-			<!--
-			
-			-->
-		</script>
 	</body>
 </html>

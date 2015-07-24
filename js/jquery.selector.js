@@ -34,11 +34,26 @@
 									componentObj.index = index - 5;
 								}
 							}
+
 							componentObj.methods.display();
 						});
 					});
 					$("#etiquetas").click(function(){
 						componentObj.methods.tags();
+					});
+					$(target).swipe({
+						swipeLeft:function(){
+							componentObj.methods.next();
+						},
+						swipeRight:function(){
+							componentObj.methods.prev();
+						}
+					});
+					$("#next").click(function(){
+						componentObj.methods.next();
+					});
+					$("#prev").click(function(){
+						componentObj.methods.prev();
 					});
 				},
 				next:function(){
