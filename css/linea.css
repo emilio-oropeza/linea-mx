@@ -12,6 +12,7 @@
 	width: 1000px;
 	height: 100%;
 	position: relative;
+	margin: auto;
 }
 #info_cont div{
 	position: absolute;
