@@ -57,12 +57,10 @@
 					componentObj.methods.display_poster();
 				},
 				display_galeria: function(){
-					$(target).css({"position":"fixed"});
 					$(target).show();
 					$(target).find("#gallery_container").show();
 				},
 				display_mapa:function(){
-					$(target).css({"position":"absolute"});
 					$(target).show();
 					$(target).find("#mapa_container").show();
 				},

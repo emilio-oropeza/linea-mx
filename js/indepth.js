@@ -1,6 +1,6 @@
 var disqus_shortname = 'juanfutbol';
 var disqus_identifier;
-var disqus_url="";
+var disqus_url="linea-mx";
 var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;

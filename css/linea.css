@@ -51,7 +51,7 @@
 #galerias{
 	width: 100vw;
 	height: 100%;
-	position: fixed;
+	position: absolute;
 	background-color: rgba(0, 0, 0, 0.6);
 	z-index: 15;
 	display: none;
@@ -92,7 +92,7 @@
 #gallery_container {
 	height: 600px;
 	width: 500px;
-    position: absolute;
+    position: fixed;
     left: 0px;
     right: 0px;
     top: 0px;
@@ -226,7 +226,7 @@
 	margin: auto;
 }
 .select_arrows {
-	width: 40px;
+	width: 65px;
     height: 100%;
     display: inline-block;
     float: left;
@@ -296,6 +296,9 @@
 	cursor: pointer;
 }
 @media(max-width: 1000px){
+	.select_arrows {
+		width: 40px;
+	}	
 	#indepth_cover {
 	    height: 660px;
 	}
