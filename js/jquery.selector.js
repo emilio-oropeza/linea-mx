@@ -17,9 +17,11 @@
 					"Morelia","Pachuca","Puebla","Pumas","Queretaro",
 					"Santos","Tigres","Toluca","Veracruz","Xolos"],
 			index: 0,
+			jornada: 1,
 			methods:{
 				init:function(){
 					componentObj.methods.display();
+					componentObj.methods.display_jornadas();
 					$(".equipos").each(function(index){
 						$(this).click(function(){
 							if(index < 4){
@@ -38,7 +40,7 @@
 							componentObj.methods.display();
 						});
 					});
-					$("#etiquetas").click(function(){
+					$(".etiquetas").click(function(){
 						componentObj.methods.tags();
 					});
 					$(target).swipe({
@@ -94,15 +96,20 @@
 						}
 					}
 				},
+				display_jornadas: function(){
+					$("#indepth_jornada").css({'background-image':'url("'+urlIndepth+'images/jornadas/J'+componentObj.jornada+' A.jpg")'});
+				},
 				tags: function(){
 					if(componentObj.etiquetas){
 						componentObj.etiquetas = false;
 						$("#indepth_estacion").css({'background-image':'url("'+urlIndepth+'images/estaciones/IMG_'+componentObj.equipos[componentObj.index]+'1.jpg")'});
-						$("#etiquetas").css({'background-image':'url("'+urlIndepth+'images/btns/BTN_Etiqueta.png")'});
+						$("#indepth_jornada").css({'background-image':'url("'+urlIndepth+'images/jornadas/J'+componentObj.jornada+' A.jpg")'});
+						$(".etiquetas").css({'background-image':'url("'+urlIndepth+'images/btns/BTN_Etiqueta.png")'});
 					}else{
 						componentObj.etiquetas = true;
 						$("#indepth_estacion").css({'background-image':'url("'+urlIndepth+'images/estaciones/IMG_'+componentObj.equipos[componentObj.index]+'2.jpg")'});
-						$("#etiquetas").css({'background-image':'url("'+urlIndepth+'images/btns/BTN_EtiquetaACTIVO.png")'});
+						$("#indepth_jornada").css({'background-image':'url("'+urlIndepth+'images/jornadas/J'+componentObj.jornada+' B.jpg")'});
+						$(".etiquetas").css({'background-image':'url("'+urlIndepth+'images/btns/BTN_EtiquetaACTIVO.png")'});
 					}
 				}
 			}
